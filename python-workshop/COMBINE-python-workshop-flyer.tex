@@ -1,0 +1,40 @@
+\documentclass[final,xcolor={usenames,x11names,svgnames}]{beamer}
+\usepackage[size=a4,orientation=landscape]{beamerposter}
+\usepackage{setspace}
+\usetheme{Singapore}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{itemize items}{\raise5pt\hbox{\scriptsize$\blacktriangleright$}}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{frametitle}{}
+
+\makeatletter
+\setbeamertemplate{background canvas}
+    %[vertical shading][top=beamer@blendedblue,middle=white,bottom=white] 
+    [vertical
+    shading][top=structure.fg!30!white,middle=white,bottom=white,midpoint=0.7] 
+
+\makeatother
+
+\begin{document}
+    % TITLE
+    \begin{frame}
+        \vspace{-2.5\baselineskip}
+        \begin{center}
+            \small COMBINE -- ISCB Regional Student Group Australia\\[1.0ex]
+            \Large Python Workshop
+            \normalsize
+        \end{center}
+        \vfill
+        \begin{minipage}[c]{\textwidth}
+            When: XX September, 2013\\
+            Time: todo\\
+            Where: todo\\
+            Cost: Free\\
+            Max.~Attendance: 20\\
+            Instructor: Dr.~Bernie Pope (VLSCI)\\
+            Description: todo\\
+            Topics Covered: todo\\
+        \end{minipage}
+        \vfill
+    \end{frame}
+\end{document}
