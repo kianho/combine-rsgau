@@ -1,38 +1,61 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 \usepackage[noheadfoot,nomarginpar,top=10mm,bottom=10mm,left=10mm,right=10mm]{geometry}
 \usepackage[svgnames,x11names,dvipsnames]{xcolor}
 \usepackage{tikz}
-\usepackage[top]{background}
-    \SetBgContents{
-       \begin{tikzpicture}[remember picture,overlay]
-          \shade[top color=LightSteelBlue, bottom color=white]
-          (-0.5\paperwidth,4pt) rectangle
-          (\paperwidth,-0.5\paperheight) ;
-        \end{tikzpicture}
-    }
-    \SetBgOpacity{1}
-    \SetBgScale{1}
-    \SetBgAngle{0}
 \usepackage{lipsum}
 \usepackage{varwidth}
+\usepackage{makecell}
 
-\renewcommand*\sfdefault{uop}
-\renewcommand*\familydefault{\sfdefault}
-\usepackage[T1]{fontenc}
 \usepackage{setspace}
 \usepackage{verbatim}
 \usepackage{tabu}
-\usepackage{showframe}
+\usepackage[noframe]{showframe}
+
+\usepackage{lmodern}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
 
 \begin{document}
-    \doublespacing
+
+    \begin{tikzpicture}[remember picture,overlay]
+      \shade[top color=LightSteelBlue, bottom color=white]
+      (current page.north west) rectangle
+      (current page.south east) ;
+    \end{tikzpicture}
+
     \thispagestyle{empty}
     \noindent
-    \begin{minipage}[t]{\textwidth}
-        \begin{tabu} to \linewidth {|X[1]X[2]|}
-        x & \begin{minipage}[t]{\columnwidth} x \end{minipage}
+    \vfill
+    \raggedleft
+    \begin{minipage}[c]{0.8\textwidth}
+        \extrarowsep=1ex
+        \begin{tabu} to 0.9\linewidth {X[1]X[5]}
+            & COMBINE proudly presents\\[0.5ex]
+            &\raggedright {\LARGE\scshape\bfseries Python for the Life
+        Sciences}\\[3ex]
+            \raggedleft\textbf{Date} & \_\_\_ September, 2013\\
+            \raggedleft\textbf{Time} & TBD\\
+            \raggedleft\textbf{Venue} & TBD\\
+            \raggedleft\textbf{RSVP} & TBD (Max.~of 20 places)\\
+            \raggedleft\textbf{Instructor} & Dr.~Bernie Pope, VLSCI\\
+            \raggedleft\textbf{Description} & TBD\\
+            \raggedleft\textbf{Topics} & TBD
+        \end{tabu}\\[7ex]
+        \extrarowsep=1ex
+        \begin{tabu} to 0.9\linewidth {X[1]X[5]}
+            \raggedleft\textbf{About us}&\raggedright 
+            COMBINE is a student-run organisation for researchers in
+            computational biology, bioinformatics, and related fields.\linebreak
+            
+            We aim to
+            bring together students and early-career researchers from the
+            computational and life sciences for networking, collaboration, and
+            professional development.\\
+            \raggedleft\textbf{Sponsors}&\raggedright
+            ...
         \end{tabu}
     \end{minipage}
+    \vfill
 
     \begin{comment}
         \begin{minipage}[t]{\textwidth}
