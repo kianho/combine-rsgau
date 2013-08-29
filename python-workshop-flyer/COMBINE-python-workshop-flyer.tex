@@ -1,40 +1,77 @@
-\documentclass[final,xcolor={usenames,x11names,svgnames}]{beamer}
-\usepackage[size=a4,orientation=landscape]{beamerposter}
+\documentclass[11pt,a4paper]{article}
+\usepackage[noheadfoot,nomarginpar,top=10mm,bottom=10mm,left=10mm,right=10mm]{geometry}
+\usepackage[svgnames,x11names,dvipsnames]{xcolor}
+\usepackage{tikz}
+\usepackage[top]{background}
+    \SetBgContents{
+       \begin{tikzpicture}[remember picture,overlay]
+          \shade[top color=LightSteelBlue, bottom color=white]
+          (-0.5\paperwidth,4pt) rectangle
+          (\paperwidth,-0.5\paperheight) ;
+        \end{tikzpicture}
+    }
+    \SetBgOpacity{1}
+    \SetBgScale{1}
+    \SetBgAngle{0}
+\usepackage{lipsum}
+\usepackage{varwidth}
+
+\renewcommand*\sfdefault{uop}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
 \usepackage{setspace}
-\usetheme{Singapore}
-\beamertemplatenavigationsymbolsempty
-\setbeamertemplate{itemize items}{\raise5pt\hbox{\scriptsize$\blacktriangleright$}}
-\setbeamertemplate{headline}{}
-\setbeamertemplate{frametitle}{}
-
-\makeatletter
-\setbeamertemplate{background canvas}
-    %[vertical shading][top=beamer@blendedblue,middle=white,bottom=white] 
-    [vertical
-    shading][top=structure.fg!30!white,middle=white,bottom=white,midpoint=0.7] 
-
-\makeatother
+\usepackage{verbatim}
+\usepackage{tabu}
+\usepackage{showframe}
 
 \begin{document}
-    % TITLE
-    \begin{frame}
-        \vspace{-2.5\baselineskip}
-        \begin{center}
-            \small COMBINE -- ISCB Regional Student Group Australia\\[1.0ex]
-            \Large Python Workshop
-            \normalsize
-        \end{center}
-        \vfill
-        \begin{minipage}[c]{\textwidth}
-            When: XX September, 2013\\
-            Time: todo\\
-            Where: todo\\
-            Cost: Free\\
-            Max.~Attendance: 20\\
-            Instructor: Dr.~Bernie Pope (VLSCI)\\
-            Description: todo\\
-            Topics Covered: todo\\
+    \doublespacing
+    \thispagestyle{empty}
+    \noindent
+    \begin{minipage}[t]{\textwidth}
+        \begin{tabu} to \linewidth {|X[1]X[2]|}
+        x & \begin{minipage}[t]{\columnwidth} x \end{minipage}
+        \end{tabu}
+    \end{minipage}
+
+    \begin{comment}
+        \begin{minipage}[t]{\textwidth}
+            \begin{minipage}[t]{0.3\textwidth}
+                \vspace{0.1\textheight}
+                \
+            \end{minipage}
+            \hspace{1ex}
+            \begin{minipage}[t]{0.7\textwidth}
+                \vspace{0.1\textheight}
+                \begin{minipage}[c]{\textwidth}
+                    {\Huge\scshape\bfseries Python Workshop}
+                \end{minipage}
+            \end{minipage}
+        \end{minipage}\\
+        \begin{minipage}[t]{\textwidth}
+            \vspace{3ex}
+            \begin{minipage}[t]{0.3\textwidth}
+                \raggedleft
+                \textbf{Date}\\
+                \textbf{Time}\\
+                \textbf{Venue}\\
+                \textbf{Instructor}
+            \end{minipage}
+            \hspace{1ex}
+            \begin{minipage}[t]{0.7\textwidth}
+                \_\_\_ September, 2013\\
+                TBD\\
+                TBD\\
+                Dr.~Bernie Bope\\
+                The Victorian Life Sciences Computation Initiative (VLSCI)
+            \end{minipage}
         \end{minipage}
-        \vfill
-    \end{frame}
+    \end{comment}
+
+%   Date:\\
+%   Time:\\
+%   Venue:\\
+%   Instructor:\\
+
+
 \end{document}
