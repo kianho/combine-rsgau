@@ -5,7 +5,7 @@
 \usepackage{lipsum}
 \usepackage{varwidth}
 \usepackage{makecell}
-
+\usepackage{graphicx}
 \usepackage{setspace}
 \usepackage{verbatim}
 \usepackage{tabu}
@@ -16,20 +16,19 @@
 \usepackage[T1]{fontenc}
 
 \begin{document}
-
-    \begin{tikzpicture}[remember picture,overlay]
-      \shade[top color=LightSteelBlue, bottom color=white]
-      (current page.north west) rectangle
-      (current page.south east) ;
-    \end{tikzpicture}
-
+    %   \begin{tikzpicture}[remember picture,overlay]
+    %     \shade[top color=LightSteelBlue, bottom color=white]
+    %     (current page.north west) rectangle
+    %     (current page.south east)  ;
+    %   \end{tikzpicture}
     \thispagestyle{empty}
-    \noindent
+    \noindent\\
     \vfill
-    \raggedleft
-    \begin{minipage}[c]{0.8\textwidth}
+    \begin{minipage}[c]{0.9\textwidth}
+        \centering
         \extrarowsep=1ex
-        \begin{tabu} to 0.9\linewidth {X[1]X[5]}
+        \begin{tabu} to 0.9\linewidth {X[1]X[3]}
+            \includegraphics[height=40mm]{./images/python-logo.png} &  \\
             & COMBINE proudly presents\\[0.5ex]
             &\raggedright {\LARGE\scshape\bfseries Python for the Life
         Sciences}\\[3ex]
@@ -38,63 +37,25 @@
             \raggedleft\textbf{Venue} & TBD\\
             \raggedleft\textbf{RSVP} & TBD (Max.~of 20 places)\\
             \raggedleft\textbf{Instructor} & Dr.~Bernie Pope, VLSCI\\
-            \raggedleft\textbf{Description} & TBD\\
-            \raggedleft\textbf{Topics} & TBD
-        \end{tabu}\\[7ex]
-        \extrarowsep=1ex
-        \begin{tabu} to 0.9\linewidth {X[1]X[5]}
-            \raggedleft\textbf{About us}&\raggedright 
+            \raggedleft\textbf{Description} & 
+        Python is a general-purpose programming language suitable for
+        programmers of all abilities due to its distinctly clear and readable
+        syntax. It is used in a wide variety disciplines and is supported by an
+        extensive range of open-source libraries. One of its many strengths is
+        its ability to perform ad-hoc analysis and visualisation of large
+        datasets common to the computational life sciences; whether it be
+        sequence, network, genomic, structural, or molecular data.\\[1ex]
+        \raggedleft\textbf{About us}&\raggedright 
             COMBINE is a student-run organisation for researchers in
             computational biology, bioinformatics, and related fields.\linebreak
             
-            We aim to
-            bring together students and early-career researchers from the
-            computational and life sciences for networking, collaboration, and
-            professional development.\\
-            \raggedleft\textbf{Sponsors}&\raggedright
-            ...
+            We aim to bring together students and early-career researchers from
+            the computational and life sciences for networking, collaboration,
+            and professional development.\linebreak
+
+            COMBINE is sponsored by the ICT for the Life Sciences Forum.
         \end{tabu}
-    \end{minipage}
+    \end{minipage}\\
+    \vspace{40mm}
     \vfill
-
-    \begin{comment}
-        \begin{minipage}[t]{\textwidth}
-            \begin{minipage}[t]{0.3\textwidth}
-                \vspace{0.1\textheight}
-                \
-            \end{minipage}
-            \hspace{1ex}
-            \begin{minipage}[t]{0.7\textwidth}
-                \vspace{0.1\textheight}
-                \begin{minipage}[c]{\textwidth}
-                    {\Huge\scshape\bfseries Python Workshop}
-                \end{minipage}
-            \end{minipage}
-        \end{minipage}\\
-        \begin{minipage}[t]{\textwidth}
-            \vspace{3ex}
-            \begin{minipage}[t]{0.3\textwidth}
-                \raggedleft
-                \textbf{Date}\\
-                \textbf{Time}\\
-                \textbf{Venue}\\
-                \textbf{Instructor}
-            \end{minipage}
-            \hspace{1ex}
-            \begin{minipage}[t]{0.7\textwidth}
-                \_\_\_ September, 2013\\
-                TBD\\
-                TBD\\
-                Dr.~Bernie Bope\\
-                The Victorian Life Sciences Computation Initiative (VLSCI)
-            \end{minipage}
-        \end{minipage}
-    \end{comment}
-
-%   Date:\\
-%   Time:\\
-%   Venue:\\
-%   Instructor:\\
-
-
 \end{document}
