@@ -23,3 +23,4 @@ pdf: ${SRC}
 
 clean:
 	\rm -rf ./*.pdf ./*.aux ./*.out ./*.nav ./*.snm ./*.toc ./*.fls ./*.log
+	\rm -rf ./*.html
