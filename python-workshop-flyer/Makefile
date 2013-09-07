@@ -1,6 +1,25 @@
-all:
-	scons
+SRC=./COMBINE-python-workshop-flyer.md
+
+all: prereqs html pdf
+
+# Check if 'pandoc' is installed on the system, it is needed to compile
+# the various documents.
+prereqs:
+	@( if ! type pandoc 2> /dev/null > /dev/null ; \
+	then \
+		echo "ERROR: 'pandoc' is not installed ..." 1>&2 ; \
+		echo "INSTALLING 'pandoc' ..." 1>&2 ; \
+		sudo apt-get install pandoc ; \
+	fi )
+
+html: ${SRC}
+	pandoc ${SRC} -o `basename ${SRC} .md`.html -f markdown+multiline_tables
+
+pdf: ${SRC} 
+	pandoc ${SRC} -o `basename ${SRC} .md`.pdf \
+		-f markdown+multiline_tables \
+		-H `basename ${SRC} .md`.preamble \
+		--variable geometry:margin=20mm --variable fontsize=12pt \
 
 clean:
-	scons -c
-	\rm -rf ./*.out ./*.nav ./*.snm ./*.toc
+	\rm -rf ./*.pdf ./*.aux ./*.out ./*.nav ./*.snm ./*.toc ./*.fls ./*.log
