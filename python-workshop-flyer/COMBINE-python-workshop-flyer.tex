@@ -1,61 +1,115 @@
-\documentclass[12pt,a4paper]{article}
-\usepackage[noheadfoot,nomarginpar,top=10mm,bottom=10mm,left=10mm,right=10mm]{geometry}
-\usepackage[svgnames,x11names,dvipsnames]{xcolor}
-\usepackage{tikz}
-\usepackage{lipsum}
+\documentclass[11pt]{article}
+\usepackage[noheadfoot,nomarginpar,vmargin={10mm,10mm},hmargin={20mm,20mm}]{geometry}
+\usepackage{booktabs}
 \usepackage{varwidth}
-\usepackage{makecell}
+\usepackage{lipsum}
 \usepackage{graphicx}
-\usepackage{setspace}
-\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
 \usepackage{tabu}
 \usepackage[noframe]{showframe}
-
+\usepackage{pbox}
 \usepackage{lmodern}
 \renewcommand*\familydefault{\sfdefault}
 \usepackage[T1]{fontenc}
 
-\begin{document}
-    %   \begin{tikzpicture}[remember picture,overlay]
-    %     \shade[top color=LightSteelBlue, bottom color=white]
-    %     (current page.north west) rectangle
-    %     (current page.south east)  ;
-    %   \end{tikzpicture}
-    \thispagestyle{empty}
-    \noindent\\
-    \vfill
-    \begin{minipage}[c]{0.9\textwidth}
-        \centering
-        \extrarowsep=1ex
-        \begin{tabu} to 0.9\linewidth {X[1]X[3]}
-            \includegraphics[height=40mm]{./images/python-logo.png} &  \\
-            & COMBINE proudly presents\\[0.5ex]
-            &\raggedright {\LARGE\scshape\bfseries Python for the Life
-        Sciences}\\[3ex]
-            \raggedleft\textbf{Date} & \_\_\_ September, 2013\\
-            \raggedleft\textbf{Time} & TBD\\
-            \raggedleft\textbf{Venue} & TBD\\
-            \raggedleft\textbf{RSVP} & TBD (Max.~of 20 places)\\
-            \raggedleft\textbf{Instructor} & Dr.~Bernie Pope, VLSCI\\
-            \raggedleft\textbf{Description} & 
-        Python is a general-purpose programming language suitable for
-        programmers of all abilities due to its distinctly clear and readable
-        syntax. It is used in a wide variety disciplines and is supported by an
-        extensive range of open-source libraries. One of its many strengths is
-        its ability to perform ad-hoc analysis and visualisation of large
-        datasets common to the computational life sciences; whether it be
-        sequence, network, genomic, structural, or molecular data.\\[1ex]
-        \raggedleft\textbf{About us}&\raggedright 
-            COMBINE is a student-run organisation for researchers in
-            computational biology, bioinformatics, and related fields.\linebreak
-            
-            We aim to bring together students and early-career researchers from
-            the computational and life sciences for networking, collaboration,
-            and professional development.\linebreak
 
-            COMBINE is sponsored by the ICT for the Life Sciences Forum.
-        \end{tabu}
-    \end{minipage}\\
-    \vspace{40mm}
+\begin{document}
+\newpage
+\null
+\vfill
+\pagestyle{empty}
+\noindent
+\begin{minipage}[t]{\linewidth}
+\tabulinesep=2ex
+\begin{tabu}{rX}
+%            & \noindent \raggedleft\includegraphics[height=25mm]{./python-logo-master-v3-TM-flattened.png}\\
+    & \begin{minipage}[t]{\linewidth}
+    \large{\textbf{COMBINE}} Workshop Series\\[1ex]
+    \Huge{\bfseries Python for the Life Sciences}
+\end{minipage} \\
+    \textbf{Date} & Thursday, 26 September, 2013 \par
+                        2:00pm to 5:00pm \\
+    \textbf{Venue} & \begin{minipage}[t]{0.6\linewidth}
+                    Room 546, Building 263 \\
+                    Melbourne Graduate School of Education \\
+                    234 Queensberry Street \\
+                    The University of Melbourne
+                \end{minipage}\quad
+                \begin{varwidth}[t]{0.3\linewidth}
+                    Campus Map Ref: \\
+                    Google Maps:
+                \end{varwidth}\\
+                \textbf{Registration} & \emph{FREE}, limited to 20 places.\\
+        \textbf{Description} & \begin{varwidth}[t]{\linewidth}
+                \raggedright
+                In this workshop, we provide a hands-on introduction to the
+                fundamentals of Python and its data processing features through
+                worked-examples involving bioinformatics datasets.\par
+                \medskip
+                Upon completion of the workshop, you will have gained a
+                foundational proficiency in Python, enabling you to use
+                some of its powerful (and programmer-friendly) features
+                in research-related tasks.\par
+                \medskip
+                Topics covered:\par
+                \begin{itemize}
+                    \item A revision of programming fundamentals (e.g.
+                        variables, loops, conditions, procedures, and data
+                        types).
+                    \item
+                        Principles of good programming style.
+                    \item
+                        Introduction to bioinformatics libraries.
+                    \item
+                        Manipulating bioinformatics datasets.
+                \end{itemize}
+                \end{varwidth} \\
+       \begin{varwidth}[t]{\linewidth}
+           \textbf{What is\\ Python?}
+       \end{varwidth} &
+                \begin{varwidth}[t]{\linewidth}
+                    \raggedright
+                Python is a general-purpose programming language suitable for
+                programmers of all abilities due to its distinctly clear and
+                readable syntax. It is used in a wide variety disciplines and is
+                supported by an extensive range of open-source libraries.\par
+                \medskip
+                One of its many strengths is its ability to perform ad-hoc
+                analysis and visualisation of large datasets common to the
+                computational life sciences; whether it be sequence, network,
+                genomic, or structural data.
+                               \end{varwidth} \\
+        \textbf{Instructor} & \begin{varwidth}[t]{\linewidth}
+                        Dr.~Bernie Pope, Specialist Programmer\\
+                        Victorian Life Sciences Computation Initiative (VLSCI) \par
+                    \bigskip
+                    \raggedright
+                    Bernie is is a specialist programmer at the VLSCI, a
+                    high-performance computing facility for life sciences
+                    and an honorary fellow of Computing and Information
+                    Systems at the University of Melbourne,
+                    Australia.\par
+                    \medskip
+                    His interests in computing include programming language
+                    implementation and theory, especially functional
+                    programming languages such as Haskell; and more
+                    recently, bioinformatics and computational biology.\par
+                    \medskip
+                    For more details, visit his website at
+                    \href{http://berniepope.id.au/}{http://berniepope.id.au/}.
+                \end{varwidth}\\
+    \end{tabu}
+\end{minipage}
     \vfill
+    \noindent\begin{minipage}[t]{\textwidth}
+        \textbf{COMBINE} is a student-run organisation for researchers in computational
+        biology, bioinformatics, and related fields. We are the official ISCB Regional Student
+        Group for Australia.\par
+        \medskip
+        We are proudly sponsored by:\par
+        \begin{minipage}[t]{\textwidth}
+            TODO
+        \end{minipage}
+    \end{minipage}
 \end{document}
