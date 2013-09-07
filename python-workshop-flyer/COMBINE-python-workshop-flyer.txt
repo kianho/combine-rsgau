@@ -1,3 +1,4 @@
+% vim: ft=markdown
 <link href="http://db.tt/xOyQP1Y5" rel="stylesheet"></link>
 
 # COMBINE WORKSHOP SERIES
