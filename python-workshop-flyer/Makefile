@@ -1,4 +1,5 @@
-SRC=./COMBINE-python-workshop-flyer.txt
+SRC=./COMBINE-python-workshop-flyer.md
+BASENAME=`basename ${SRC} .md`
 
 all: prereqs html pdf
 
@@ -13,12 +14,11 @@ prereqs:
 	fi )
 
 html: ${SRC}
-	pandoc ${SRC} -o `basename ${SRC} .txt`.html -f markdown+multiline_tables
+	pandoc ${SRC} -o ${BASENAME}.html -f markdown+multiline_tables
 
 pdf: ${SRC} 
-	pandoc ${SRC} -o `basename ${SRC} .txt`.pdf \
-		-f markdown+multiline_tables \
-		-H `basename ${SRC} .txt`.preamble \
+	pandoc ${SRC} -o ${BASENAME}.pdf \
+		-f markdown+multiline_tables -H ${BASENAME}.preamble \
 		--variable geometry:margin=20mm --variable fontsize=12pt \
 
 clean:

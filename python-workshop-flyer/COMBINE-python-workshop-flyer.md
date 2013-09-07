@@ -16,8 +16,6 @@ _Venue_         Room 546, Building 263 \
                 234 Queensberry Street \
                 The University of Melbourne \
 
-\phantom{}      Campus Map Reference:
-                    [U17](http://maps.unimelb.edu.au/parkville/building/263) \
                 Google Maps: [goo.gl/maps/sZ3zm](http://goo.gl/maps/sZ3zm)
 
 _Registration_  Sign up at TBD, registration is _FREE_ but limited to 20
@@ -28,7 +26,7 @@ _What to Bring_ Your laptop.
 _Prerequisites_ A basic proficiency in any programming language is
                 preferred.
 
-_Enquiries_     [workshops@combine.org.au](mailto:workshops@combine.org.au)
+_Enquiries_     [TBD](TBD)
 ------------------------------------------------------------------------------
 
 ### Workshop Description
@@ -83,7 +81,8 @@ For more details, please visit his website at
 
 ### About Us
 
-COMBINE is the official ISCB Regional Student Group for Australia, a
+[COMBINE](http://www.combine.org.au) is the official [ISCB Regional Student
+Group](http://www.iscbsc.org/content/regional-student-groups) for Australia, a
 student-run organisation for researchers in computational biology,
 bioinformatics, and related fields. 
 
