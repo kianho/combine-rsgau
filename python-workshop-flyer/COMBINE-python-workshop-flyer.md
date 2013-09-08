@@ -65,6 +65,14 @@ For more details, please visit the official Python website at
 
 ### About the Presenter
 
+<!--- HTML will be ignored by LaTeX -->
+<img style="padding:10px" src=./images/Bernie-Photo.jpeg height=100px />
+<img style="padding:10px" src=./images/logo_vlsci_3508x1890.jpg height=100px />
+<br />
+<!--- LaTeX will be ignored by HTML -->
+\includegraphics[height=100px]{./images/Bernie-Photo.jpeg}\quad
+\includegraphics[height=100px]{./images/logo_vlsci_3508x1890.jpg}
+
 Dr. Bernie Pope is a specialist programmer at the VLSCI, a high-performance
 computing (HPC) facility for life sciences research. He is also an Honorary
 Fellow and occasional lecturer in the University of Melbourne's Department of

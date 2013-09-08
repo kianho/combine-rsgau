@@ -4,15 +4,16 @@
 \renewcommand*\familydefault{\sfdefault}
 \usepackage[T1]{fontenc}
 \usepackage{calc}
+\usepackage{graphicx}
 
 \usepackage[dvipsnames,usenames]{color}
 \usepackage{tikz}
 \usepackage[all,top]{background}
     \SetBgContents{
        \begin{tikzpicture}[remember picture,overlay]
-          \shade[top color=blue!30!white,middle color=white, bottom color=white]
+          \shade[top color=blue!25!white,middle color=white, bottom color=white]
           (-0.5\paperwidth,1ex) rectangle (\paperwidth,-0.05\paperheight) ;
-          \shade[bottom color=black!30!white,middle color=white,top color=white]
+          \shade[bottom color=black!25!white,middle color=white,top color=white]
           (-0.5\paperwidth,-0.95\paperheight) rectangle
           (\paperwidth,-\paperheight) ;
         \end{tikzpicture}
