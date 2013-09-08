@@ -19,7 +19,10 @@ html: ${SRC}
 pdf: ${SRC} 
 	pandoc ${SRC} -o ${BASENAME}.pdf \
 		-f markdown+multiline_tables -H ${BASENAME}.preamble \
-		--variable geometry:margin=20mm --variable fontsize=12pt \
+		--variable geometry:margin=20mm --variable fontsize=12pt
+
+txt: ${SRC}
+	pandoc ${SRC} -o ${BASENAME}.txt -f markdown+multiline_tables -t plain
 
 clean:
 	\rm -rf ./*.pdf ./*.aux ./*.out ./*.nav ./*.snm ./*.toc ./*.fls ./*.log
