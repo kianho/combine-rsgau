@@ -1,4 +1,5 @@
 <link href="http://db.tt/xOyQP1Y5" rel="stylesheet"></link>
+<body style="width:800px" />
 
 # COMBINE WORKSHOP SERIES
 
