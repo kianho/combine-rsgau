@@ -1,7 +1,7 @@
 SRC=./COMBINE-python-workshop-flyer.md
 BASENAME=`basename ${SRC} .md`
 
-all: prereqs html pdf
+all: prereqs html pdf txt
 
 # Check if 'pandoc' is installed on the system, it is needed to compile
 # the various documents.

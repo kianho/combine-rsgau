@@ -17,6 +17,7 @@ _Venue_         Room 546, Building 263 \
                 234 Queensberry Street \
                 The University of Melbourne \
 
+                Campus Maps Ref: U17 \
                 Google Maps: [goo.gl/maps/sZ3zm](http://goo.gl/maps/sZ3zm)
 
 _Registration_  Sign up at TBD, registration is _FREE_ but limited to 20
@@ -32,9 +33,9 @@ _Enquiries_     [TBD](TBD)
 
 ### Workshop Description
 
-In this workshop, we provide a hands-on introduction to the fundamentals
-of Python and its data processing features through worked-examples
-involving bioinformatics datasets.
+In this workshop, we provide a hands-on introduction to the fundamentals of
+Python programming language ([python.org](http://www.python.org)) and its data
+processing features through worked-examples involving bioinformatics datasets.
 
 Upon completion of the workshop, you will have gained a foundational
 proficiency in Python, enabling you to use some of its powerful (and
@@ -49,20 +50,6 @@ bioinformatics datasets.
 
 If you have a specific topic or problem in your research programming
 that you would like covered, please email us at TBD.
-
-### What is Python?
-
-Python is a general-purpose programming language suitable for
-programmers of all abilities due to its distinctly clear and readable
-syntax. It is used in a wide variety disciplines and is supported by an
-extensive range of open-source libraries.
-
-One of its many strengths is its ability to perform ad-hoc analysis and
-visualisation of large datasets common to the computational life
-sciences; whether it be sequence, network, genomic, or structural data.
-
-For more details, please visit the official Python website at
-[python.org](http://www.python.org).
 
 ### About the Presenter
 
@@ -95,18 +82,8 @@ Group](http://www.iscbsc.org/content/regional-student-groups) for Australia, a
 student-run organisation for researchers in computational biology,
 bioinformatics, and related fields. 
 
-We aim to bring together students and early career researchers from the
-computational and life sciences for networking, collaboration and professional
-development.
-
 For more information about COMBINE, upcoming events, or to become a volunteer,
 please visit our website at [combine.org.au](http://www.combine.org.au).
-
-If you would like to present your research (completed or work-in-progress)
-please email us at [combine@combine.org.au](mailto:combine@combine.org.au),
-our seminars provide a forum for instant feedback and is an excellent
-opportunity to perfect your presentation before those big conferences and
-completion seminars!
 
 We are proudly sponsored by:
 
