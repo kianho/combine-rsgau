@@ -34,8 +34,9 @@ _Enquiries_     [TBD](TBD)
 ### Workshop Description
 
 In this workshop, we provide a hands-on introduction to the fundamentals of
-Python programming language ([python.org](http://www.python.org)) and its data
-processing features through worked-examples involving bioinformatics datasets.
+the Python programming language ([python.org](http://www.python.org)) and its
+data processing features through worked-examples involving bioinformatics
+datasets.
 
 Upon completion of the workshop, you will have gained a foundational
 proficiency in Python, enabling you to use some of its powerful (and
