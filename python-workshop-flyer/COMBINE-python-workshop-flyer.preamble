@@ -5,7 +5,6 @@
 \usepackage[T1]{fontenc}
 \usepackage{calc}
 \usepackage{graphicx}
-
 \usepackage[dvipsnames,usenames]{color}
 \usepackage{tikz}
 \usepackage[all,top]{background}
@@ -22,3 +21,5 @@
     \SetBgScale{1}
     \SetBgAngle{0}
     \pagestyle{empty}
+\usepackage{titlesec}
+    \titleformat*{\section}{\Huge\bfseries}

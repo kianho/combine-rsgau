@@ -1,9 +1,51 @@
-<link href="http://db.tt/xOyQP1Y5" rel="stylesheet"></link>
-<body style="width:800px" />
+<head>
+<style>
+    body {
+        font-family:Helvetica,Arial;
+        line-height:150%;
+        padding:20px;
+        text-align:center;
+
+background: -moz-linear-gradient(top,  rgba(51,128,215,0.77) 0%, rgba(255,255,255,0) 4%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,128,215,0.77)), color-stop(4%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  rgba(51,128,215,0.77) 0%,rgba(255,255,255,0) 4%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  rgba(51,128,215,0.77) 0%,rgba(255,255,255,0) 4%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  rgba(51,128,215,0.77) 0%,rgba(255,255,255,0) 4%); /* IE10+ */
+
+background: linear-gradient(to bottom,  rgba(51,128,215,0.77) 0%,rgba(255,255,255,0) 4%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c43380d7', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+
+    }
+
+    #page-wrap {
+        text-align:left;
+        width:600px;
+        margin: 0 auto;
+    }
+
+    table {
+        text-align:center;
+        border-spacing:15px;
+        border-collapse:separate;
+    }
+
+
+
+</style>
+</head>
+<body>
+    <div id="page-wrap">
 
 # COMBINE WORKSHOP SERIES
-
-## Python for the Life Sciences
+\vspace{-2ex}
+## \Large _Python for the Life Sciences_
+\vspace{-2ex}
 --------------  --------------------------------------------------------------
 _Presenter_     Dr. Bernie Pope, _Specialist Programmer_ \
                 [Victorian Life Sciences Computation Initiative (VLSCI)](http://www.vlsci.org)
@@ -61,8 +103,8 @@ that you would like covered, please email us at
 <a href="http://www.vlsci.org.au"><img style="padding:10px" src=http://db.tt/hojOTGLB height=100px /></a>
 <br />
 <!--- LaTeX will be ignored by HTML -->
-\includegraphics[height=100px]{./images/Bernie-Photo.jpeg}\quad
-\includegraphics[height=100px]{./images/logo_vlsci_3508x1890.jpg}
+\includegraphics[height=25mm]{./images/Bernie-Photo.jpeg}\quad
+\includegraphics[height=25mm]{./images/logo_vlsci_3508x1890.jpg}
 
 Dr. Bernie Pope is a specialist programmer at the VLSCI, a high-performance
 computing (HPC) facility for life sciences research. He is also an Honorary
@@ -71,11 +113,11 @@ Computing](https://handbook.unimelb.edu.au/view/2013/COMP10001)_ in the
 Department of Computing and Information Systems at the University of
 Melbourne.
 
-His research interests include programming language implementation and theory,
-especially functional programming languages such as Haskell. Recently
-focussing on bioinformatics and computational biology, Dr Pope teaches several
-of VLSCI's programming skills courses, helping scientists unlock the potential
-of HPC facilities for their everyday research.
+His research interests include programming language implementation
+and theory, especially functional programming languages such as Haskell.
+Recently focussing on bioinformatics and computational biology, Dr Pope
+teaches several of VLSCI's programming skills courses, helping scientists
+unlock the potential of HPC facilities for their everyday research.
 
 For more details, please visit his website at
 [berniepope.id.au](http://www.berniepope.id.au).
@@ -105,3 +147,6 @@ We are proudly sponsored by:
 - [International Society for Computational Biology (ISCB)](http://www.iscb.org)
 
 \vfill
+
+</div>
+</body>
