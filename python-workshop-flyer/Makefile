@@ -1,5 +1,6 @@
 SRC=./COMBINE-python-workshop-flyer.md
 BASENAME=`basename ${SRC} .md`
+DEPLOYDIR=~/Dropbox/Public/COMBINE/docs
 
 all: prereqs html pdf txt
 
@@ -19,10 +20,17 @@ html: ${SRC}
 pdf: ${SRC} 
 	pandoc ${SRC} -o ${BASENAME}.pdf \
 		-f markdown+multiline_tables -H ${BASENAME}.preamble \
-		--variable geometry:margin=20mm --variable fontsize=12pt
+		--variable geometry:margin=15mm --variable fontsize=11pt \
+		--variable geometry:a4paper
 
 txt: ${SRC}
 	pandoc ${SRC} -o ${BASENAME}.txt -f markdown+multiline_tables -t plain
+
+deploy: all
+	( if [ ! -d ${DEPLOYDIR} ] ; then mkdir -vp ${DEPLOYDIR} ; fi )
+	( cp ./${BASENAME}.html ./${BASENAME}.pdf ./${BASENAME}.txt ${DEPLOYDIR} )
+	( cp -rp ./images/ ${DEPLOYDIR} )
+
 
 clean:
 	\rm -rf ./*.pdf ./*.aux ./*.out ./*.nav ./*.snm ./*.toc ./*.fls ./*.log

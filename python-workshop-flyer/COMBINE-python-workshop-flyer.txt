@@ -28,7 +28,7 @@ Python for the Life Sciences
   Prerequisites  A basic proficiency in any programming language is
                  preferred.
 
-  Enquiries      combine@combine.org.au
+  Enquiries      workshops@combine.org.au
   -------------- ---------------------------------------------------------
 
 Workshop Description
@@ -49,7 +49,8 @@ introduction to bioinformatics libraries, and manipulating
 bioinformatics datasets.
 
 If you have a specific topic or problem in your research programming
-that you would like covered, please email us at TBD.
+that you would like covered, please email us at
+workshops@combine.org.au.
 
 About the Presenter
 
@@ -81,4 +82,5 @@ We are proudly sponsored by:
 
 -   ICT for Life Sciences Forum
 -   International Society for Computational Biology (ISCB)
+
 
