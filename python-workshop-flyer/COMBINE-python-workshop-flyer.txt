@@ -37,8 +37,8 @@ In this workshop, we provide a hands-on introduction to the fundamentals
 of the Python programming language (python.org) and its data processing
 features through worked-examples involving bioinformatics datasets.
 
-Upon completion of the workshop, you will have gained a foundational
-proficiency in Python, enabling you to use some of its powerful (and
+Upon completion, you will have gained a foundational proficiency in
+Python, enabling you to use some of its powerful (and
 programmer-friendly) features in research-related tasks.
 
 We are aiming to cover the following topics:

@@ -1,3 +1,6 @@
+\newpage
+\null
+\vfill
 <head>
 <style>
     body {
@@ -6,21 +9,14 @@
         padding:20px;
         text-align:center;
 
-background: -moz-linear-gradient(top,  rgba(51,128,215,0.77) 0%, rgba(255,255,255,0) 4%); /* FF3.6+ */
+        background: -moz-linear-gradient(top,  rgba(51,128,215,0.77) 0%, rgba(255,255,255,0) 4%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,128,215,0.77)), color-stop(4%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(51,128,215,0.77) 0%,rgba(255,255,255,0) 4%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(51,128,215,0.77) 0%,rgba(255,255,255,0) 4%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(51,128,215,0.77) 0%,rgba(255,255,255,0) 4%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(51,128,215,0.77) 0%,rgba(255,255,255,0) 4%); /* W3C */
 
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,128,215,0.77)), color-stop(4%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-
-background: -webkit-linear-gradient(top,  rgba(51,128,215,0.77) 0%,rgba(255,255,255,0) 4%); /* Chrome10+,Safari5.1+ */
-
-background: -o-linear-gradient(top,  rgba(51,128,215,0.77) 0%,rgba(255,255,255,0) 4%); /* Opera 11.10+ */
-
-background: -ms-linear-gradient(top,  rgba(51,128,215,0.77) 0%,rgba(255,255,255,0) 4%); /* IE10+ */
-
-background: linear-gradient(to bottom,  rgba(51,128,215,0.77) 0%,rgba(255,255,255,0) 4%); /* W3C */
-
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c43380d7', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-
-
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c43380d7', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
     }
 
     #page-wrap {
@@ -34,9 +30,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c43380d7', e
         border-spacing:15px;
         border-collapse:separate;
     }
-
-
-
 </style>
 </head>
 <body>
@@ -81,7 +74,7 @@ the Python programming language ([python.org](http://www.python.org)) and its
 data processing features through worked-examples involving bioinformatics
 datasets.
 
-Upon completion of the workshop, you will have gained a foundational
+Upon completion, you will have gained a foundational
 proficiency in Python, enabling you to use some of its powerful (and
 programmer-friendly) features in research-related tasks.
 
@@ -103,8 +96,12 @@ that you would like covered, please email us at
 <a href="http://www.vlsci.org.au"><img style="padding:10px" src=http://db.tt/hojOTGLB height=100px /></a>
 <br />
 <!--- LaTeX will be ignored by HTML -->
+\begin{wrapfigure}{l}{78mm}
+\vspace{-10pt}
 \includegraphics[height=25mm]{./images/Bernie-Photo.jpeg}\quad
 \includegraphics[height=25mm]{./images/logo_vlsci_3508x1890.jpg}
+\vspace{-10pt}
+\end{wrapfigure}
 
 Dr. Bernie Pope is a specialist programmer at the VLSCI, a high-performance
 computing (HPC) facility for life sciences research. He is also an Honorary
@@ -140,8 +137,8 @@ We are proudly sponsored by:
 <br />
 <!--- LaTeX will be ignored by HTML -->
 \vspace{2ex}
-\includegraphics[height=50px]{./images/ICT-for-Life-Sciences-Forum-logo.png}\quad
-\includegraphics[height=50px]{./images/ISCBSC-logo.png}
+\includegraphics[height=20mm]{./images/ICT-for-Life-Sciences-Forum-logo.png}\quad
+\includegraphics[height=20mm]{./images/ISCBSC-logo.png}
 
 - [ICT for Life Sciences Forum](http://www.ict4lifesciences.org.au)
 - [International Society for Computational Biology (ISCB)](http://www.iscb.org)

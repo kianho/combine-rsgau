@@ -20,8 +20,8 @@ html: ${SRC}
 pdf: ${SRC} 
 	pandoc ${SRC} -o ${BASENAME}.pdf \
 		-f markdown+multiline_tables -H ${BASENAME}.preamble \
-		--variable geometry:margin=15mm --variable fontsize=11pt \
-		--variable geometry:a4paper
+		--variable geometry:margin=35mm --variable fontsize=12pt \
+		--variable geometry:a3paper
 
 txt: ${SRC}
 	pandoc ${SRC} -o ${BASENAME}.txt -f markdown+multiline_tables -t plain
