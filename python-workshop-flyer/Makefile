@@ -1,18 +1,18 @@
+# DEPENDENCIES
+# 	pandoc version >= 1.10.1
+# 		NOTE: the version in your Ubuntu APT repository may be too old, visit 
+# 		http://johnmacfarlane.net/pandoc/installing.html#all-platforms for
+# 		instructions on installing the latest stable version. 
+#
+# 	latex
+# 		Installable via the conventional Ubuntu 'apt-get install' command-line
+# 		program.
+
 SRC=./COMBINE-python-workshop-flyer.md
 BASENAME=`basename ${SRC} .md`
 DEPLOYDIR=~/Dropbox/Public/COMBINE/docs
 
-all: prereqs html pdf txt
-
-# Check if 'pandoc' is installed on the system, it is needed to compile
-# the various documents.
-prereqs:
-	@( if ! type pandoc 2> /dev/null > /dev/null ; \
-	then \
-		echo "ERROR: 'pandoc' is not installed ..." 1>&2 ; \
-		echo "INSTALLING 'pandoc' ..." 1>&2 ; \
-		sudo apt-get install pandoc ; \
-	fi )
+all: html pdf txt
 
 html: ${SRC}
 	pandoc ${SRC} -o ${BASENAME}.html -f markdown+multiline_tables
