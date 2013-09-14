@@ -3,7 +3,6 @@
 # 		NOTE: the version in your Ubuntu APT repository may be too old, visit 
 # 		http://johnmacfarlane.net/pandoc/installing.html#all-platforms for
 # 		instructions on installing the latest stable version. 
-#
 # 	latex
 # 		Installable via the conventional Ubuntu 'apt-get install' command-line
 # 		program.
@@ -34,4 +33,3 @@ deploy: all
 
 clean:
 	\rm -rf ./*.pdf ./*.aux ./*.out ./*.nav ./*.snm ./*.toc ./*.fls ./*.log
-	\rm -rf ./*.html

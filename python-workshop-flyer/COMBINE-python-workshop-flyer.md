@@ -56,7 +56,7 @@ _Venue_         Room 546, Building 263 \
                 [U17](http://maps.unimelb.edu.au/parkville/building/263) \
                 Google Maps: [goo.gl/maps/sZ3zm](http://goo.gl/maps/sZ3zm)
 
-_Registration_  Sign up at TBD, registration is _FREE_ but limited to 20
+_Registration_  Sign up at [goo.gl/lht4mQ](http://goo.gl/lht4mQ), registration is _FREE_ but limited to 20
                 places.
 
 _What to Bring_ Your laptop.
