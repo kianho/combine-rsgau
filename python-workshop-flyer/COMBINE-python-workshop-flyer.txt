@@ -56,7 +56,7 @@ About the Presenter
 
 Dr. Bernie Pope is a specialist programmer at the VLSCI, a
 high-performance computing (HPC) facility for life sciences research. He
-is also an Honorary Fellow and lecturer for COMP10001 Foundations in
+is also an Honorary Fellow and Lecturer for COMP10001 Foundations in
 Computing in the Department of Computing and Information Systems at the
 University of Melbourne.
 
