@@ -1,0 +1,213 @@
+\documentclass[12pt,]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \usepackage{fontspec}
+  \ifxetex
+    \usepackage{xltxtra,xunicode}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+\usepackage[a3paper,margin=35mm]{geometry}
+\usepackage{longtable}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={},
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+% vim:ft=tex
+
+\usepackage{lmodern}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage[dvipsnames,usenames]{color}
+\usepackage{tikz}
+\usepackage[all,top]{background}
+    \SetBgContents{
+       \begin{tikzpicture}[remember picture,overlay]
+          \shade[top color=blue!25!white,middle color=white, bottom color=white]
+          (-0.5\paperwidth,1ex) rectangle (\paperwidth,-0.05\paperheight) ;
+          \shade[bottom color=black!25!white,middle color=white,top color=white]
+          (-0.5\paperwidth,-0.95\paperheight) rectangle
+          (\paperwidth,-\paperheight) ;
+        \end{tikzpicture}
+    }
+    \SetBgOpacity{1}
+    \SetBgScale{1}
+    \SetBgAngle{0}
+    \pagestyle{empty}
+\usepackage{titlesec}
+    \titleformat*{\section}{\Huge\bfseries}
+\usepackage{wrapfig}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\newpage
+\null
+\vfill
+
+\section{COMBINE WORKSHOP SERIES}
+
+\vspace{-2ex}
+
+\subsection{\Large \emph{Python for the Life Sciences}}
+
+\vspace{-2ex}
+
+\begin{longtable}[c]{@{}ll@{}}
+\hline\noalign{\medskip}
+\begin{minipage}[t]{0.21\columnwidth}\raggedright
+\emph{Presenter}
+\end{minipage} & \begin{minipage}[t]{0.79\columnwidth}\raggedright
+Dr.~Bernie Pope, \emph{Specialist Programmer}\\
+\end{minipage}
+\\\noalign{\medskip}
+\begin{minipage}[t]{0.21\columnwidth}\raggedright
+\emph{Date \& Time}
+\end{minipage} & \begin{minipage}[t]{0.79\columnwidth}\raggedright
+Thursday, 26 September, 2013\\2:00pm to 5:00pm
+\end{minipage}
+\\\noalign{\medskip}
+\begin{minipage}[t]{0.21\columnwidth}\raggedright
+\emph{Venue}
+\end{minipage} & \begin{minipage}[t]{0.79\columnwidth}\raggedright
+Room 546, Building 263\\Melbourne Graduate School of Education\\234
+Queensberry Street\\The University of Melbourne\\
+\end{minipage}
+\\\noalign{\medskip}
+\begin{minipage}[t]{0.21\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.79\columnwidth}\raggedright
+Campus Maps Ref:
+\href{http://maps.unimelb.edu.au/parkville/building/263}{U17}\\Google
+Maps: \href{http://goo.gl/maps/sZ3zm}{goo.gl/maps/sZ3zm}
+\end{minipage}
+\\\noalign{\medskip}
+\begin{minipage}[t]{0.21\columnwidth}\raggedright
+\emph{Registration}
+\end{minipage} & \begin{minipage}[t]{0.79\columnwidth}\raggedright
+Sign up at \href{http://goo.gl/lht4mQ}{goo.gl/lht4mQ}, registration is
+\emph{FREE} but limited to 20 places.
+\end{minipage}
+\\\noalign{\medskip}
+\begin{minipage}[t]{0.21\columnwidth}\raggedright
+\emph{What to Bring}
+\end{minipage} & \begin{minipage}[t]{0.79\columnwidth}\raggedright
+Your laptop.
+\end{minipage}
+\\\noalign{\medskip}
+\begin{minipage}[t]{0.21\columnwidth}\raggedright
+\emph{Prerequisites}
+\end{minipage} & \begin{minipage}[t]{0.79\columnwidth}\raggedright
+A basic proficiency in any programming language is preferred.
+\end{minipage}
+\\\noalign{\medskip}
+\begin{minipage}[t]{0.21\columnwidth}\raggedright
+\emph{Enquiries}
+\end{minipage} & \begin{minipage}[t]{0.79\columnwidth}\raggedright
+\href{mailto:workshops@combine.org.au}{workshops@combine.org.au}
+\end{minipage}
+\\\noalign{\medskip}
+\hline
+\end{longtable}
+
+\subsubsection{Workshop Description}
+
+In this workshop, we provide a hands-on introduction to the fundamentals
+of the Python programming language
+(\href{http://www.python.org}{python.org}) and its data processing
+features through worked-examples involving bioinformatics datasets.
+
+Upon completion, you will have gained a foundational proficiency in
+Python, enabling you to use some of its powerful (and
+programmer-friendly) features in research-related tasks.
+
+We are aiming to cover the following topics:
+
+A review of programming fundamentals (e.g.~variables, loops, conditions,
+procedures, and data types), principles of good programming style,
+introduction to bioinformatics libraries, and manipulating
+bioinformatics datasets.
+
+If you have a specific topic or problem in your research programming
+that you would like covered, please email us at
+\href{mailto:workshops@combine.org.au}{workshops@combine.org.au}.
+
+\subsubsection{About the Presenter}
+
+Dr.~Bernie Pope is a specialist programmer at the VLSCI, a
+high-performance computing (HPC) facility for life sciences research. He
+is also an Honorary Fellow and Lecturer for
+\emph{\href{https://handbook.unimelb.edu.au/view/2013/COMP10001}{COMP10001
+Foundations in Computing}} in the Department of Computing and
+Information Systems at the University of Melbourne.
+
+His research interests include programming language implementation and
+theory, especially functional programming languages such as Haskell.
+Recently focussing on bioinformatics and computational biology, Dr Pope
+teaches several of VLSCI's programming skills courses, helping
+scientists unlock the potential of HPC facilities for their everyday
+research.
+
+For more details, please visit his website at
+\href{http://www.berniepope.id.au}{berniepope.id.au}.
+
+\subsubsection{About Us}
+
+\href{http://www.combine.org.au}{COMBINE} is the official
+\href{http://www.iscbsc.org/content/regional-student-groups}{ISCB
+Regional Student Group} for Australia, a student-run organisation for
+researchers in computational biology, bioinformatics, and related
+fields.
+
+For more information about COMBINE, upcoming events, or to become a
+volunteer, please visit our website at
+\href{http://www.combine.org.au}{combine.org.au}.
+
+We are proudly sponsored by:
+
+ \vspace{2ex}
+\includegraphics[height=20mm]{./images/ICT-for-Life-Sciences-Forum-logo.png}\quad
+\includegraphics[height=20mm]{./images/ISCBSC-logo.png}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  \href{http://www.ict4lifesciences.org.au}{ICT for Life Sciences Forum}
+\item
+  \href{http://www.iscb.org}{International Society for Computational
+  Biology (ISCB)}
+\end{itemize}
+
+\vfill
+
+\end{document}
